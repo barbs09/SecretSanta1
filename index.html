@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretSanta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SecretSanta</h1>
+        <p>Onde a diversão do Amigo Secreto ganha vida com presentes incríveis!</p>
+    </header>
+    <main>
+        <div class="form-group">
+            <label>Gênero</label>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="feminino"> Feminino
+            <input type="radio" name="genero" value="nao-binario"> Não-binário
+        </div>
+        <div class="form-group">
+            <label>Interesses</label>
+            <input type="checkbox" name="interesse" value="tecnologia"> Tecnologia
+            <input type="checkbox" name="interesse" value="livros"> Livros
+            <input type="checkbox" name="interesse" value="esportes"> Esportes
+            <input type="checkbox" name="interesse" value="cozinha"> Cozinha
+            <input type="checkbox" name="interesse" value="arte"> Arte
+            <input type="checkbox" name="interesse" value="musica"> Música
+            <input type="checkbox" name="interesse" value="viagens"> Viagens
+        </div>
+        <div class="form-group">
+            <label>Contexto do Amigo Secreto</label>
+            <select id="contexto">
+                <option value="trabalho">Trabalho</option>
+                <option value="familia">Família</option>
+                <option value="amigos">Amigos</option>
+            </select>
+        </div>
+        <button onclick="gerarPresentes()">Gerar Presentes</button>
+        <div id="resultados" class="results"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
